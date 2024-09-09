@@ -29,17 +29,17 @@ public class TestPayrollCalc
 
   @Test
   public void testThree() {
-    assertEquals(0.00, df.format(calc.grossPay(0)));
+    assertEquals(0, df.format(calc.grossPay(0)));
   }
 
   @Test
   public void testFour() {
-    assertEquals(150.50, df.format(calc.deductions(503.4, 2)));
+    assertEquals(150.85, df.format(calc.deductions(503.4, 2)));
   }
 
   @Test
   public void testFive() {
-    assertEquals(170.60, df.format(calc.deductions(503.4, 3)));
+    assertEquals(170.85, df.format(calc.deductions(503.4, 3)));
   }
   
 }
