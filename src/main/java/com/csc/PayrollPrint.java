@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 public class PayrollPrint 
 {
-    DecimalFormat df = new DecimalFormat("$#.##");
+    DecimalFormat df = new DecimalFormat("#.##");
     DecimalFormat dollarf = new DecimalFormat("$#.##");
     
     public void printBasePay(double hoursWorked, double grossPay)
