@@ -7,6 +7,7 @@ import java.text.DecimalFormat;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+// Tests not applicable with new user input for pay rate 
 public class TestPayrollCalc 
 {
   PayrollCalc calc;

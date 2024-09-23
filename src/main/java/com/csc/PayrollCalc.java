@@ -7,6 +7,11 @@ public class PayrollCalc
         return hoursWorked > 40 ? hoursWorked * 16.78*(1.5) : hoursWorked * 16.78;
     }
 
+    public double grossPay(double hoursWorked, double payRate)
+    {
+        return hoursWorked > 40 ? hoursWorked * payRate * (1.5) : hoursWorked * payRate;
+    }
+
     public double deductions(double grossPay, int numDependents)
     {
         return ((0.06)*grossPay // Social security tax rate

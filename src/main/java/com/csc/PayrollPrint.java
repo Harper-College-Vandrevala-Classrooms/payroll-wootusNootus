@@ -7,12 +7,12 @@ public class PayrollPrint
     DecimalFormat df = new DecimalFormat("#.##");
     DecimalFormat dollarf = new DecimalFormat("$#.##");
     
-    public void printBasePay(double hoursWorked, double grossPay)
+    public void printBasePay(double hoursWorked, double grossPay, double payRate)
     {
         System.out.println("\nPayroll:");
 
         System.out.println("\n Hours: " + df.format(hoursWorked));
-        System.out.println("  Rate: 16.78 $/hr");
+        System.out.println("  Rate: " + dollarf.format(payRate));
         System.out.println(" Gross: " + dollarf.format(grossPay));
     }
 
